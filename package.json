@@ -1,0 +1,24 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "This is a notes app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahortigu/NODE-COURSE.git"
+  },
+  "author": "ahortigu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahortigu/NODE-COURSE/issues"
+  },
+  "homepage": "https://github.com/ahortigu/NODE-COURSE#readme",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "validator": "^10.8.0",
+    "yargs": "^12.0.2"
+  }
+}
