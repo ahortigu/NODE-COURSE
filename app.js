@@ -5,10 +5,13 @@
 
 const chalk = require('chalk')
 const validator = require('validator')
-const getNotes = require('./notes.js')
+const notes = require('./notes.js')
 const yargs = require('yargs')
-const msg = getNotes()
-console.log(msg)
+//const msg = getNotes()
+
+
+
+// console.log(msg)
 console.log(validator.isEmail('ana@example.com'))
 console.log(chalk.blue.bold.inverse('Success'))
 
@@ -35,8 +38,7 @@ yargs.command({
         }   
     },
     handler: function (argv) {
-      console.log('Title: ' + argv.title)
-      console.log('Body: ' + argv.body)
+      notes.addNotes(argv.title, argv.body)
     } 
 }) 
 
